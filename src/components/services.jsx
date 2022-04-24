@@ -5,15 +5,13 @@ export const Services = (props) => {
         <div className='section-title'>
           <h2>Our Services</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+          Content Development can be really tough and time taking matter. If you are struggling to develop handsome quality of content, we are here and happily ready to help you!
           </p>
         </div>
-        <div className='row'>
+        <div className='row '>
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className='col-md-4'>
-                  {' '}
+                <div key={`${d.name}-${i}`} className='card justify-content-around' >
                   <i className={d.icon}></i>
                   <div className='service-desc'>
                     <h3>{d.name}</h3>
@@ -22,7 +20,7 @@ export const Services = (props) => {
                 </div>
               ))
             : 'loading'}
-        </div>
+            </div>
       </div>
     </div>
   )

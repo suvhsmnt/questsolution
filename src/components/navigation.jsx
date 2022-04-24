@@ -9,15 +9,14 @@ export const Navigation = (props) => {
             data-toggle='collapse'
             data-target='#bs-example-navbar-collapse-1'
           >
-            {' '}
             <span className='sr-only'>Toggle navigation</span>{' '}
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
-            React Landing Page
-          </a>{' '}
+          <a className='page-scroll' href='#page-top'>
+            <img className="logo" src='img/quest-logo.png' style={{marginBottom: '10px'}}/>
+          </a>
         </div>
 
         <div
@@ -25,11 +24,11 @@ export const Navigation = (props) => {
           id='bs-example-navbar-collapse-1'
         >
           <ul className='nav navbar-nav navbar-right'>
-            <li>
+            {/* <li>
               <a href='#features' className='page-scroll'>
                 Features
               </a>
-            </li>
+            </li> */}
             <li>
               <a href='#about' className='page-scroll'>
                 About

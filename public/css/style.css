@@ -54,6 +54,7 @@ a:focus {
 ul,
 ol {
   list-style: none;
+  text-align: center;
 }
 ul,
 ol {
@@ -72,7 +73,6 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 15px;
   transition: all 0.8s;
 }
 #menu.navbar-default {
@@ -87,11 +87,17 @@ hr {
   color: #333;
   text-transform: uppercase;
 }
+
+#menu.navbar-default .navbar-nav > ul{
+  height: auto;
+
+}
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
+  text-align: center;
   color: #555;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   padding: 8px 2px;
   border-radius: 0;
@@ -207,21 +213,28 @@ a:focus,
 .intro {
   display: table;
   width: 100%;
-  padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  padding: 0px;
+  background: url(../img/intro-bg.png) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
+
+.card{
+  position: relative;
+  float: left;
+  height: 250px;
+  width: 350px;
+}
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.6);
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
   color: #fff;
-  font-size: 82px;
+  font-size: 70px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
@@ -240,8 +253,8 @@ a:focus,
   margin-bottom: 60px;
 }
 header .intro-text {
-  padding-top: 350px;
-  padding-bottom: 200px;
+  padding: 100px 0px;
+  padding-bottom: 20px;
   text-align: center;
 }
 /* Features Section */
@@ -304,8 +317,8 @@ header .intro-text {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
 }
 #about p {
-  line-height: 24px;
-  margin: 30px 0;
+  line-height: 30px;
+  margin: 18px 0;
 }
 /* Services Section */
 #services {
@@ -314,13 +327,13 @@ header .intro-text {
   color: #fff;
 }
 #services .service-desc {
-  margin: 10px 10px 20px;
+  margin: 5px;
 }
 #services h2 {
   color: #fff;
 }
 #services .section-title h2::after {
-  position: absolute;
+  position: relative;
   content: "";
   background: rgba(255, 255, 255, 0.3);
   height: 4px;
@@ -348,6 +361,7 @@ header .intro-text {
   color: rgba(255, 255, 255, 0.75);
 }
 #services .service-desc {
+  position: relative;
   margin-bottom: 40px;
 }
 /* Portfolio Section */
@@ -448,6 +462,7 @@ header .intro-text {
 }
 #team .team-img {
   width: 240px;
+  height: 250px;
 }
 #team .thumbnail {
   background: transparent;
