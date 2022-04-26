@@ -74,15 +74,15 @@ export const Contact = (props) => {
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : '/'}>
-                      <i className='fa fa-twitter'></i>
+                    <a href={props.data ? props.data.linkdin : '/'}>
+                      <i className='fa fa-linkedin'></i>
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href={props.data ? props.data.youtube : '/'}>
                       <i className='fa fa-youtube'></i>
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
